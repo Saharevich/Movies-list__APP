@@ -24,6 +24,11 @@
 
     function renderMoviesList() {
         const newMovies = moviesInputNode.value;
+        if (!newMovies) {
+            alert('Введите название фильма!!!')
+            return;
+        }
+
         const movieID = Date.now();
         
         
